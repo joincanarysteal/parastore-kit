@@ -1,0 +1,39 @@
+# dependencies & build
+node_modules/
+dist/
+dist-standalone/
+*.local
+.vite/
+
+# env
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+.claude/
+CLAUDE.md
+docs/
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Backend
+backend/.venv/
+backend/.pytest_cache/
+backend/.python-version
+backend/.ruff_cache/
+backend/.data/
+*.egg-info/
+
+# TanStack Router — local regeneration (snapshot ships a committed copy
+# at frontend/src/routeTree.gen.ts so a fresh `pnpm build` works without
+# the dev plugin running first).
+frontend/.tanstack/
