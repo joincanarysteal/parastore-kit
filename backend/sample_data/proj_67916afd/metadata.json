@@ -1,0 +1,56 @@
+{
+  "project_id": "proj_67916afd",
+  "name": "Sample store",
+  "description": "A small convenience store located near the tech hub.",
+  "store_type": "Convenience store",
+  "grid_size": null,
+  "weekly_schedule": [
+    {
+      "day": 1,
+      "is_open": true,
+      "open_hour": 8,
+      "close_hour": 20
+    },
+    {
+      "day": 2,
+      "is_open": true,
+      "open_hour": 8,
+      "close_hour": 20
+    },
+    {
+      "day": 3,
+      "is_open": true,
+      "open_hour": 8,
+      "close_hour": 20
+    },
+    {
+      "day": 4,
+      "is_open": true,
+      "open_hour": 8,
+      "close_hour": 20
+    },
+    {
+      "day": 5,
+      "is_open": true,
+      "open_hour": 8,
+      "close_hour": 20
+    },
+    {
+      "day": 6,
+      "is_open": false,
+      "open_hour": 8,
+      "close_hour": 20
+    },
+    {
+      "day": 7,
+      "is_open": false,
+      "open_hour": 8,
+      "close_hour": 20
+    }
+  ],
+  "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+  "customer_profile": "The store primarily serves a corporate demographic, characterized by high weekday foot traffic from tech professionals seeking coffee and quick snacks, and occasional surges from tech tourists.",
+  "supplemental_summary": "",
+  "created_at": "2026-05-15T03:25:43.608257+00:00",
+  "updated_at": "2026-05-15T03:25:43.608257+00:00"
+}
