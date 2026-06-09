@@ -1,0 +1,55 @@
+[project]
+name = "store-emulator"
+version = "0.1.0"
+description = "Isometric 3D store-layout simulator with LLM-driven virtual personas."
+license = "MIT"
+requires-python = ">=3.13"
+authors = [
+    { name = "intellicia", email = "dev@intellicia.co" },
+]
+maintainers = [
+    { name = "Rafael Kim", email = "doom0728@gmail.com" },
+    { name = "SungHyun Lee", email = "lavelee15@gmail.com" },
+    { name = "Dg Goo", email = "dg.goo@intellicia.co" },
+]
+dependencies = [
+    "fastapi[standard]>=0.135.3",
+    "filelock>=3.25.2",
+    "instructor>=1.15.1",
+    "litellm>=1.83.4",
+    "openpyxl>=3.1,<4",
+    "pandas>=3.0.3",
+    "pathfinding>=1.0.20",
+    "pillow>=12.2.0",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/intellicia-public/parastore"
+Repository = "https://github.com/intellicia-public/parastore"
+Issues = "https://github.com/intellicia-public/parastore/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/store_emulator"]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pyright>=1.1.408",
+    "pytest>=9.0.3",
+]
+
+[tool.pyright]
+pythonVersion = "3.13"
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
+exclude = [".venv", "**/__pycache__"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
